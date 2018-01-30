@@ -1,0 +1,424 @@
+@media (max-width:1100px){
+	
+}
+
+@media (max-width:800px){
+
+.container{ padding:0px 15px;}
+.header_main .logo {padding: 5px 12px;}
+.header_main .nav_main ul li a{padding: 24px 15px;}
+.header_main .nav_main ul li.ph a { padding: 24px 12px 24px 36px;}
+
+.banner_main{ min-height:485px;}
+.order_form .tab ul li a{ width:139px; font-size:13px;}
+.order_form .form_main .col-sm-9{ width: 75%;}
+
+.order_form .tab ul li.foot a{ background:url(../images/form-icon1.png) no-repeat 8px 19px #fff; padding:14px 35px 14px 0px; text-indent:50px;}
+.order_form .tab ul li.foot a.active{ background:url(../images/form-icon1.png) no-repeat 8px -36px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.bag a{ background:url(../images/form-icon2.png) no-repeat 8px 10px #fff; padding:14px 35px 14px 0px; text-indent:40px;}
+.order_form .tab ul li.bag a.active{ background:url(../images/form-icon2.png) no-repeat 8px -29px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.jacket a{ background:url(../images/form-icon3.png) no-repeat 8px 10px #fff; padding:14px 35px 14px 0px; text-indent:50px;}
+.order_form .tab ul li.jacket a.active{ background:url(../images/form-icon3.png) no-repeat 8px -29px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.wallet a{ background:url(../images/form-icon4.png) no-repeat 8px 10px #fff;  padding:14px 35px 14px 0px; text-indent:50px;}
+.order_form .tab ul li.wallet a.active{ background:url(../images/form-icon4.png) no-repeat 8px -29px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.belt a{ background:url(../images/form-icon5.png) no-repeat 8px 15px #fff; padding:14px 35px 14px 0px; text-indent:60px;}
+.order_form .tab ul li.belt a.active{ background:url(../images/form-icon5.png) no-repeat 8px -25px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form button.btn { right: 10px;}
+
+.stats_main {padding: 61px 0 28px;}
+.stats_main .stat-col h2 {font-size: 32px;}
+.stats_main .stat-col h3 {font-size: 16px;}
+
+.services_main {padding: 35px 0 29px;}
+
+.how_main h2 {margin: 0 0 50px;}
+.how_main .how-text ul li {margin: 0 0 15px 35px;}
+
+.publication_main .publication .owl-nav .owl-prev{left:20px;}
+.publication_main .publication .owl-nav .owl-next{ right:20px;}
+
+.publication_main .publication { padding: 0 60px;}
+.publication_main .publication .owl-stage-outer{ max-width:100%;}
+.publication_main .publication .owl-stage-outer img{ max-width:90%;}
+
+.order_detail_window .container{ padding:0px 10px;}
+.order_detail_window .tab ul li{ margin:0px 0px 0px 10px }
+.order_detail_window .tab ul li a{ width:118px;}
+.order_detail_window .order_details .label{ padding: 0.2em 0em 0.3em;}
+.order_detail_window .order_details .label h4{ text-align:inherit}
+
+.cart_window .container{ padding:0px 30px;}
+.cart_main .col-lg-5, .cart_main .col-sm-5{ width:40%;}
+.cart_main .col-lg-4, .cart_main .col-sm-4 { width: 26%;}
+
+.login_main{ min-height:inherit; padding:0px 0px 30px 0px }
+.login_main .container{ padding:0px 15px;}
+.login_main .login_graphic ul { float: left; margin:48px 0 0 16px; width: 100%;}
+.login_main .login_graphic ul li{ padding:15px 0 15px 59px; font-size:14px;}
+
+
+.checkout_main .head{ padding:14px 25px}
+.checkout_main .step1 { padding: 49px 25px 55px;}
+.checkout_main ul.checkout_form li{ width:100%; margin:0px 0px 25px 0px }
+.checkout_main ul.checkout_form li label{ width:100%; padding:0px 0 10px}
+.checkout_main ul.checkout_form li .field{ width:100%;}
+.checkout_main .step1 .form_right .check{ margin:20px 0px 20px 0px }
+.checkout_main ul.checkout_form li .field .field_box.std_code{ width:19%;}
+.checkout_main ul.checkout_form li .field .field_box.number{ width:73%;}
+
+.checkout_main .step2 .title { padding-left: 54px;}
+.body-checkout .container { padding: 0 10px;}
+.checkout_main .head.address_added{ padding:15px 10px 14px;}
+.checkout_main .head.address_added .title{ font-size:20px;}
+
+.checkout_main .head.address_added .addresses ul li{ margin:18px 0 0}
+.checkout_main .head.address_added .addresses .text  { width:70%;}
+.checkout_main .head.address_added .addresses .text h2 {font-size:20px;}
+.checkout_main .head.address_added .addresses .text h2 span{ font-size:14px;}
+.checkout_main .head.address_added .addresses .text p{font-size:14px;}
+
+.checkout_main .head.address_added .addresses .button  { width:30%;}
+.checkout_main .head.address_added .addresses .button a{ width:100%;}
+
+.checkout_main .step2 .title{ padding-left:15px;}
+.checkout_main .step2 .coupon{ padding-right:0px;}
+
+.checkout_main .step2 .mode .radio ul li{ margin:0 15px 0 0}
+.checkout_main .step2 .button .pull-right{ padding-right:0px;}
+.checkout_main .step2 .promo, .checkout_main .step2 #insurance.promo{ width:290px; right:0px;}
+.checkout_main .step2 .promo .field_box{ width:184px;}
+.checkout_main .step2 .promo .btn{ width:106px; padding:14px 0px;}
+.checkout_main .head.details_added{ padding:14px 15px;}
+.checkout_main .head.details_added .details { padding-left: 15px;}
+.checkout_main .head.details_added .details ul li { margin: 0;}
+.checkout_main .head.details_added .details ul li.total { width: 30%;}
+.checkout_main .head.details_added .details ul li.button{ width:50%;}
+.checkout_main .head.details_added .details ul li.button a{ width:65%;}
+
+.checkout_main .change_address .address_list{ width:60%;}
+
+.checkout_main .step2 .button .btn{ margin:0px; float:right;}
+
+
+
+.footer_main .stay_connect .btn { background: #fff url("../images/ic_subscribe.png") no-repeat scroll left 18% center;}
+  
+.profile_main .profile_details { padding-left: 35px;}
+
+.order_history_main .order .before_after .before{ width:48%; height:293px; }
+.order_history_main .order .before_after .before_image{ width:100%; height:253px; }
+.order_history_main .order .before_after .before_image figure{width:100%; height:253px;}
+
+.order_history_main .order .before_after .after{ width:48%; height:293px; margin:0px; float:right; }
+.order_history_main .order .before_after .after_image{ width:100%; height:253px;  }
+.order_history_main .order .before_after .after_image figure{ width:100%; height:253px;}
+
+.order_history_main .order .details .comment span { padding: 0 0 0 10px; width:88%;}
+
+.order_history_main .order .details .rating .star { margin: 0 15px 0 0;}
+
+.order_history_main .order .total .total_price .container{ padding:0px;}
+
+}
+
+
+@media (max-width:700px){
+
+.header_main .logo { width: 80px;  overflow: hidden;  padding: 5px 12px;}
+.header_main .logo img{ width:auto; max-width:inherit;}
+
+.header_main .nav_main ul li a { font-size: 12px;  padding: 24px 15px;     font-family: "LatoWebMedium";}
+
+.banner_main { min-height: 385px;}
+
+.order_form{ bottom:40px;}
+.order_form .tab ul li{ width:17%}
+.order_form .tab ul li a{ width:100%; font-size:13px; text-indent:-999999px !important; overflow:hidden;}
+
+.order_form .tab ul li.foot a{ background:url(../images/form-icon1.png) no-repeat center 13px #fff; padding:14px 0px 14px 0px;}
+.order_form .tab ul li.foot a.active{ background:url(../images/form-icon1.png) no-repeat center -36px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.bag a{ background:url(../images/form-icon2.png) no-repeat center 10px #fff; padding:14px 0px 14px 0px;}
+.order_form .tab ul li.bag a.active{ background:url(../images/form-icon2.png) no-repeat center -36px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.jacket a{ background:url(../images/form-icon3.png) no-repeat center 10px #fff; padding:14px 0px 14px 0px;}
+.order_form .tab ul li.jacket a.active{ background:url(../images/form-icon3.png) no-repeat center -36px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.wallet a{ background:url(../images/form-icon4.png) no-repeat center 10px #fff;  padding:14px 0px 14px 0px;}
+.order_form .tab ul li.wallet a.active{ background:url(../images/form-icon4.png) no-repeat center -36px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+.order_form .tab ul li.belt a{ background:url(../images/form-icon5.png) no-repeat center 15px #fff; padding:14px 0px 14px 0px;}
+.order_form .tab ul li.belt a.active{ background:url(../images/form-icon5.png) no-repeat center -31px rgba(3,0,0,0.7); color:#FFF; border-top:5px solid #FFF; padding-top:9px;}
+
+
+.order_form .form_main{ height:223px;}
+.order_form .form_main .col-xs-12 { width:100%;}
+.order_form .form_main .select_row {float: left;  margin: 0 0 10px 0px;}
+.order_form .form_main .radio{ float:left;}
+.order_form .form_main .radio ul li {margin: 5px 28px 0 0px;}
+.order_form .form_main button.btn {margin:0px 0 0; padding: 10px 39px;}
+
+
+
+.stats_main .stat-col{ margin-bottom:35px;}
+.stats_main .stat-col .icon {margin: 0 0 15px;}
+.stats_main .stat-col h2{ margin:0px 0px 30px;}
+.stats_main .stat-col h3::before{ left:39%;}
+
+.services_main h2, .why_main h2, .how_main h2, .partner_main  h2{ font-size:30px;}
+
+.why_main img{ max-height:53px;}
+.why_main h3{ font-size:16px;}
+
+.how_main .how-text{ padding-top:40px;}
+.how_main .app img{ max-width:40%;}
+
+.order_detail_window .tab{ margin:14px 0 14px}
+.order_detail_window .tab ul li { margin:0 0 0 5px;}
+.order_detail_window .tab ul li a{ font-size:10px; width:60px;}
+
+.order_detail_window .inner .col-xs-12{ width:100%;}
+.order_detail_window .order_details { margin: 0 0 15px;}
+.order_detail_window .order_details .head h2 { margin: 20px 0 0; width:35%;}
+.order_detail_window .order_details .head h3 { width: 60%; text-align:right;}
+.order_detail_window .order_details .head h3 span {font-size: 12px;}
+.order_detail_window .order_details .label { padding: 0.2em 0 0.3em 16px; text-align: left;}
+
+.order_detail_window .order_details .feature .select_row ul li{ width:38%;}
+.order_detail_window .order_details .feature .select_row ul li.size{ width:22%;}
+.order_detail_window .order_details .option { margin-bottom: 0px;}
+
+.order_detail_window .order_details .radio{ float:left; width:100%;}
+.order_detail_window .order_details .radio ul{ width:100%;}
+.order_detail_window .order_details .radio ul li{ width:; margin:5px 20px 0 0px}
+
+.order_detail_window .order_details .services .service{margin-bottom:0px;}
+.order_detail_window .order_details .delivery { margin-bottom:0px; margin-top:0px;}
+
+.order_detail_window .order_details .comments { padding-bottom: 15px;}
+
+.order_detail_window .bottom .price{ text-align:center; padding:0px 0px 5px }
+
+
+.cart_main {padding: 30px 0 0;}
+
+
+.cart_main .cart_list_item .cart_list::before { width: 100%;}
+
+
+.cart_main .col-xs-12{ width:100%;}
+.cart_main .costing .col-xs-9{ width:70%;}
+.cart_main .costing .col-xs-3{width:30%; float:right; text-align:right;}
+.cart_main .title {margin-bottom: 15px;}
+.cart_main .pickup_item .field .pickup-date{ width:100%;}
+.cart_main .pickup_item .field .time{width:100%; border:1px solid #cecece; border-top:0px solid #cecece; margin:0px 0px 0px 0px }
+
+.cart_main .col-xs-12.delivery,.cart_main .col-xs-12.cost { margin-bottom:25px;}
+
+.cart_window .bottom .price{ text-align:center;}
+.cart_window .bottom .navigation a{ width:100%; margin:5px 0px;}
+
+.login_main::after{ background:none; display:none;}
+.login_main{ padding:0px;  }
+.login_main .login_graphic{ margin-top:30px; background: url(../images/login_bg.jpg) no-repeat no-repeat; background-size:cover;}
+
+.login_main .login_graphic ul { float: left; margin:30px 0 0 16px; width: 100%;}
+.login_main .login_graphic ul li{ padding:15px 0 15px 59px; font-size:14px;}
+
+
+.checkout_main .head{ font-size:18px;}
+.checkout_main .step1 { padding: 29px 5px 25px;}
+.checkout_main .step1 .form_left { border-right: 0px dashed #cccccc;}
+.checkout_main .step1 .form_right { padding-left: 15px;}
+
+.footer_main .container{ padding:0px 15px;}
+.footer_main .col-xs-12{ margin-bottom:30px;}
+.checkout_main .button {padding: 12px 10px;}
+.checkout_main .button button {padding: 12px 0px; width:90%; margin:0px 0px; float:left;}
+
+.checkout_main .step2 .charges{ padding-left:15px; }
+.checkout_main .step2 .service-charges{ padding-left:15px; }
+.checkout_main .step2 .points{color:#50ad96; padding-left:15px; }
+
+.checkout_main .step2 {padding: 23px 0 20px;}
+.checkout_main .step2 .row { padding-left: 15px; padding-right: 15px;}
+
+.checkout_main .step2 .total { margin: 30px 0 20px;}
+.checkout_main .step2 .total .title { font-size: 18px;   padding-left: 15px; }
+.checkout_main .step2 .mode .title,.checkout_main .step2 .share .title{padding-bottom:12px;}
+.checkout_main .step2 .mode .radio { margin: 0;}
+.checkout_main .step2 .coupon a.button {padding: 12px 0px; position: relative; top: 0; width: 100%; margin:10px 0px;}
+.checkout_main .step2 .promo, .checkout_main .step2 #insurance.promo { right: 0; top: 8px; width: 290px;}
+.checkout_main .step2 .button .btn { padding: 13px 0px; width:100%;}
+.checkout_main .head.address_added .addresses { padding-left: 15px;}
+.checkout_main .head.address_added .addresses .text h2 { font-size: 14px; margin:0px 0px 5px 0px }
+.checkout_main .head.address_added .addresses .text h2 span { font-size: 12px;}
+.checkout_main .head.address_added .addresses .text p { font-size: 12px; padding:0px 10px 0px 0px; }
+.checkout_main .head.address_added .addresses .button a{ font-size: 12px;}
+
+.checkout_main .change_address {  padding: 25px 0 15px;  width: 100%;}
+.checkout_main .change_address .radio { margin: 0 0 30px; padding: 0 0 0 0px;}
+.checkout_main .change_address .radio ul li { margin: 0; width: 33%;}
+.checkout_main .change_address .address_list { width: 100%;}
+.checkout_main .change_address .address_list ul li { width: 100%;}
+.checkout_main .change_address .addnew_button { margin: 40px 0 0 0px;  padding: 28px 0 0; width: 100%;}
+.checkout_main .change_address .addnew_button button { padding: 10px 0;  width: 100%;}
+
+.checkout_main .head.details_added .title { text-align:center;}
+.checkout_main .head.details_added .details ul li { margin: 0 0 0 0px; width: 100%; text-align:center;}
+.checkout_main .head.details_added .details ul li.total { width: 100%;}
+.checkout_main .head.details_added .details ul li.button { width: 100%; padding:10px 0px 0px 0px }
+.checkout_main .head.details_added .details ul li.button a { width: 100%;}
+
+
+
+}
+
+@media (max-width:500px){
+	
+
+.header_main .nav_main ul li.m_menu{display:block;} 
+
+.services_main h2,.why_main h2,.how_main h2, .partner_main h2 {margin: 0 0 22px;}
+	
+.order_form .form_main .select_row ul li .select-style select{ padding:11px 0 11px 5px}
+
+.stats_main { padding: 22px 0 28px;}
+.stats_main .stat-col { margin-bottom: 20px;}
+.stats_main .stat-col .icon { margin: 0 0 5px;}
+.stats_main .stat-col h2 { margin: 0 0 20px;}
+
+.how_main .col-lg-6{ text-align:center;}
+.how_main .col-lg-6 img{ max-width:75%;}
+.how_main .how-text{ text-align:left;}
+.how_main .app h4 { margin: 21px 0 18px;}
+.services_main { padding: 0 0 29px;}
+.why_main { padding: 0;}
+.why_main .why1,.why_main .why2,.why_main .why3,.why_main .why4 { padding: 40px 15px;}
+.partner_main,.how_main { padding: 30px 0;}
+.partner_main .owl-controls { margin: 16px 0 0;}
+
+.service-slide .before_after .title{ font-size:14px;}
+.service-slide .before_after .owl-nav .owl-next { height: 22px; width: 38px; background-size:cover;}
+.service-slide .before_after .owl-nav .owl-prev { height: 22px; width:28px; background-size:cover; background-position:right 0px; margin:0px 6px 0px 0px }
+.twentytwenty-horizontal .twentytwenty-handle::after { height: 125%;}
+
+
+.banner_main { min-height: 455px;}
+.order_form .form_main{ height:283px;}
+.order_form button.btn { margin: 0px 0 0; padding: 10px 39px; position: absolute; right: 20px;  top: 271px;  z-index: 99999;}
+
+.header_main .logo { width: 80px;  overflow: hidden;  padding: 5px 12px;}
+.header_main .logo img{ width:auto; max-width:inherit;}
+
+.header_main .nav_main ul li a { font-size: 12px;  padding: 16px 10px; font-family: "LatoWebMedium";}
+.header_main .nav_main ul li.ph {background:url("../images/whatsapp.png") no-repeat scroll 0 14px; background-size:18px;}
+.header_main .nav_main ul li.ph a { padding: 16px 12px 16px 20px;}
+.header_main .logo { max-width:65px; padding:2px 12px;}
+.header_main .logo img { max-height: 45px;}
+
+.body-checkout { background: #fff url("../images/checkout_bg.jpg") repeat-x scroll 0 50px;}
+
+.order_detail_window .order_details .feature { margin-bottom: 0;}
+.order_detail_window .order_details .label h4 { padding: 5px 0 0;}
+.order_detail_window .order_details .services .service { margin-top: 6px;}
+.order_detail_window .order_details .services { margin-bottom: 10px;}
+.order_detail_window .order_details .radio { margin: 0;}
+
+.cart_window .bottom {padding: 5px 0;}
+.cart_window .bottom .container{padding: 0px 5px;}
+.cart_window .bottom .navigation a { font-size: 12px; padding: 10px 0px 8px; width:48%;}
+.cart_window .bottom .navigation a.continue { background: #fff url("../images/continue.jpg") no-repeat scroll 91% 10px; padding: 10px 15px 8px 0px;}
+.cart_window .bottom .price { font-size: 14px; padding-top: 6px;}
+.cart_window .bottom .price span {font-size: 16px;}
+.cart_window .bottom img { max-height: 12px;}
+
+.header_main .nav_main ul li a .cart_count{font-size:10px;  height:15px;  padding:1px;  right:0;  top:12px; width:15px;}
+
+.login_main .form_main {padding: 0; width: 100%;}
+.login_main .form_main .login_tab { margin: 65px 0 0 0px;}
+.login_main .form_main.sign_up ul li .field_box { padding: 14px 65px 13px 12px;}
+.login_main .form_main.sign_up ul li.number .field_box {padding: 14px 65px 13px 50px;}
+.login_main .form_main ul li .field_box { font-size: 12px;}
+.login_main .form_main ul li span { font-size: 12px;}
+.login_main .form_main ul li.button button { font-size: 14px; padding: 10px 55px;}
+
+.login_main .login_graphic ul { margin: 30px 0 0;}
+
+.checkout_main .step2 .promo, .checkout_main .step2 #insurance.promo { width:100%;}
+.checkout_main .step2 .promo .field_box { width: 65%;}
+.checkout_main .step2 .promo .btn { width: 35%;}
+.checkout_main .step2 .share img { margin: 0;}
+.checkout_main ul.checkout_form li .field .field_box,.checkout_main ul.checkout_form li .field .field_area{ width:100%;}
+.checkout_main ul.checkout_form li .field .field_box.number { width: 80%;}
+.checkout_main ul.checkout_form li .field .select-style { width: 100%;}
+.checkout_main .button {padding: 12px 16px;}
+.checkout_main .button button {width:100%; }
+.checkout_main .step2 .row.mode { margin-bottom: 35px;  padding: 0;}
+.checkout_main .step2 .row.share { padding: 0; margin-bottom: 20px; }
+.checkout_main .step2 .coupon { padding-right: 0; padding-left: 0;}
+.checkout_main .step2 .button { padding-top: 0px;}
+
+.profile_main { padding: 40px 0 48px;}
+
+.profile_main .head{ margin:0px 0px 15px 0px }
+.profile_main .head .credit { font-size: 25px;  line-height: 20px;}
+.profile_main .head .credit span { font-size: 14px;}
+
+.profile_main .proile_sidebar { border-bottom: 2px solid #e8eaea; min-height: inherit;  padding-top:0px;}
+.profile_main .proile_sidebar .profile_pic{ margin:0px auto 30px ; float:none;}
+.profile_main .proile_sidebar .profile_nav ul li { text-align:center; margin: 0 0 20px;}
+
+.profile_main .profile_details { padding-left: 15px;}
+.profile_main .profile_details h2{margin:0px 0px 20px 0px; text-align:center;}
+
+.profile_main .profile_details .profile_address .radio { margin: 0 0 0px;}
+.profile_main .profile_details .profile_address .radio ul li {  margin: 0 13px 0 0;}
+.profile_main .profile_details .profile_address .address_list ul li{ width:100%;}
+.profile_main .profile_details .profile_address .address_list ul li h2{ text-align:left;}
+.profile_main .profile_details .profile_address .address_list ul li h2 img.edit { right: 40px;}
+
+.profile_main .profile_details .profile_address ul.profile_address_edit li.clearfix { margin: 0 40px 0px 0;}
+
+
+.order_history_main h1 { margin: 40px 0 20px;}
+
+.order_history_main .order .head h2 { font-size: 18px;}
+.order_history_main .order .head h2 span{ font-size: 14px; display:block;}
+
+.order_history_main .order .before_after .before{ width:48%; height:230px; }
+.order_history_main .order .before_after .before_image{ width:100%; height:185px; }
+.order_history_main .order .before_after .before_image figure{width:100%; height:185px; font-size: 12px;}
+.order_history_main .order .before_after .before_image figure img{max-height:165px;}
+
+.order_history_main .order .before_after .after{ width:48%; height:230px; margin:0px; float:right; }
+.order_history_main .order .before_after .after_image{ width:100%; height:185px;  }
+.order_history_main .order .before_after .after_image figure{ width:100%; height:185px; font-size: 12px;}
+.order_history_main .order .before_after .after_image figure img{max-height:165px;}
+
+.order_history_main .order .total .total_price .container{ padding:0px;}
+.order_history_main .order .total .row {padding-left: 15px; padding-right: 15px;}
+
+.order_history_main .order .total .charges{ padding-left:0px;  padding-right:0px; }
+.order_history_main .order .total .service-charges{ padding-left:0px; padding-right:0px; }
+.order_history_main .order .total .points{color:#50ad96; padding-left:0px; padding-right:0px; }
+
+.order_history_main .order .total .gross{ padding-left:0px; text-align:right;}
+.order_history_main .order .total .price{padding-left:0px; text-align:right;}
+.order_history_main .order .total .points-price{color:#50ad96; padding-left:0px; text-align:right;}
+
+.order_history_main .order .total .total_price .title { padding-left: 0; padding-right: 0; }
+.order_history_main .order .total .total_price .price { padding-left: 0px; text-align:right;}
+
+}
+
+@media (max-width:360px){
+	.cart_window .bottom .navigation a.continue { background: #fff; padding: 10px 0px 8px 0px;}
+
+}
+

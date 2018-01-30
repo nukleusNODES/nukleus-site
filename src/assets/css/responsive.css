@@ -1,0 +1,205 @@
+/*------------------------------------
+*Author:FortunaTheme
+*Template:Eris
+*Version:1.1
+*-------------------------------------
+*/
+@media screen and (max-width: 1920px) {
+  .image-bg,
+  .particle-default-bg,
+  .particle-bubble-bg,
+  .particle-snow-bg,
+  .ripple-bg {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .portfolio-content-head ul li {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .date-line {
+    display: none;
+  }
+  .contact-form form #form-name,
+  .contact-form form #form-email {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .notify-content {
+    width: 50%;
+  }
+  .coming-area #typed {
+    white-space: normal !important;
+    line-height: 56px;
+  }
+  .coming-area .type-wrap {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .image-bg,
+  .particle-default-bg,
+  .particle-bubble-bg,
+  .particle-snow-bg,
+  .ripple-bg {
+    background-size: initial;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio-overlay {
+    height: 86%;
+  }
+  .portfolio-overlay .category {
+    margin-top: 60px;
+  }
+  #right-info-bar {
+    width: 100% !important;
+    left: 0% !important;
+  }
+  .notify-content {
+    width: 90%;
+  }
+  .count {
+    max-width: 242px;
+    margin: 0 auto;
+  }
+  .count-break{
+    margin-right: 26px;
+  }
+  .count2,
+  .count4 {
+    margin-right: 0px;
+  }
+  .coming-area #typed {
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 22px;
+    padding-top: 10px;
+    font-size: 38px;
+  }
+  .coming-area #typed {
+    white-space: normal !important;
+    line-height: 48px;
+  }
+  .coming-area {
+    padding-top: 24px;
+    text-align: center;
+  }
+  .count-num {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .social-icons {
+    margin-top: 20px;
+  }
+  .coming-area .notify-btn {
+    margin: 12px 10px;
+  }
+  .coming-area .info-btn {
+    margin: 12px 8px;
+  }
+
+  .coming-area p {
+    margin-bottom: 6px;
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .coming-area p {
+    margin-bottom: 8px;
+    margin-top: 36px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .count-num {
+    font-size: 36px;
+    margin-top: 14px;
+  }
+  .coming-area p {
+    margin-bottom: 8px;
+    margin-top: 32px;
+  }
+  .coming-area-detail {
+    font-size: 12px;
+  }
+  .coming-area #typed {
+    font-size: 28px;
+  }
+  .coming-area #typed {
+    line-height: 36px;
+  }
+  .coming-area .typed-cursor {
+    color: #fff;
+    font-size: 32px;
+    padding-left: 10px;
+  }
+  .coming-area {
+    padding-top: 18px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-height: 2160px) {
+  .logo-area {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-height: 1600px) {
+  .logo-area {
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (max-height: 1280px) {
+  .logo-area {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  .logo-area {
+    margin-top: 12%;
+  }
+}
+@media only screen and (max-height: 768px) {
+  .logo-area {
+    margin-top: 6%;
+  }
+}
+@media only screen and (max-height: 736px) {
+  .logo-area {
+    margin-top: 19%;
+  }
+}
+@media only screen and (max-height: 720px) {
+  .logo-area {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  @media screen and (max-width: 480px) {
+    .logo-area {
+      margin-top: 16%;
+    }
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .logo-area {
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-height: 533px) {
+  .logo-area {
+    margin-top: 6%;
+  }
+}

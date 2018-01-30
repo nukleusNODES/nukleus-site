@@ -1,0 +1,468 @@
+/*------------------------------------
+*Author:FortunaTheme
+*Template:Eris
+*Version:1.1
+*-------------------------------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #383838;
+  letter-spacing: 0.8px;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 54px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 42px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 36px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 30px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 24px;
+  color: #181818;
+  font-weight: 600;
+}
+.section-header {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  margin-bottom: 6px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-title-description {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #545454;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: 0;
+  color: #545454;
+}
+
+
+.padding-style1 {
+  padding: 40px 0;
+}
+
+.padding-style2 {
+  padding: 60px 0;
+}
+
+.animation {
+  opacity: 0;
+}
+
+.btn-style1 {
+  padding: 10px 22px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-style1:hover {
+  background-color: #ececec;
+  color: #000;
+}
+
+.btn-style2 {
+  padding: 10px 18px !important;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+  outline: 2px solid #fff;
+  margin-top: 25px !important;
+  margin-right: 15px !important;
+  font-weight: 600;
+}
+
+.btn-style2:hover,
+.btn-style2:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-style3 {
+  padding: 11px 18px !important;
+  color: #fff;
+  background: #000 !important;
+  transition: all 0.5s;
+  margin-top: 25px !important;
+  font-weight: 600;
+  border: 0px
+}
+
+.btn-style3:hover,
+.btn-style3:focus {
+  background-color: #1680A4!important;
+  color: #fff;
+}
+
+.preloader {
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.preloader-img {
+  background-image: url(../images/loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+}
+
+.title-underline {
+  width: 15px;
+  height: 6px;
+  background: #000;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.title-underline::before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+
+.title-underline::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 15px;
+  top: 2px;
+}
+
+/*------------------------------------
+*Author:FortunaTheme
+*Template:Eris
+*Version:1.1
+*-------------------------------------
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #383838;
+  letter-spacing: 0.8px;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 54px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 42px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 36px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 30px;
+  color: #181818;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 24px;
+  color: #181818;
+  font-weight: 600;
+}
+.section-header {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  margin-bottom: 6px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-title-description {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  color: #FFF;
+}
+
+.active{
+ color:#1abc9c !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #545454;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: 0;
+  color: #545454;
+}
+
+.padding-style1 {
+  padding: 40px 0;
+}
+
+.padding-style2 {
+  padding: 60px 0;
+}
+
+.animation {
+  opacity: 0;
+}
+
+.btn-style1 {
+  padding: 10px 22px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-style1:hover {
+  background-color: #ececec;
+  color: #000;
+}
+
+.btn-style2 {
+  padding: 10px 18px !important;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+  outline: 2px solid #fff;
+  margin-top: 25px !important;
+  margin-right: 15px !important;
+  font-weight: 600;
+}
+
+.btn-style2:hover,
+.btn-style2:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-style3 {
+  padding: 11px 18px !important;
+  color: #fff;
+  background: #000 !important;
+  transition: all 0.5s;
+  margin-top: 25px !important;
+  font-weight: 600;
+  border: 0px;
+}
+
+.btn-style3:hover,
+.btn-style3:focus {
+  background-color: #1680a4 !important;
+  color: #fff;
+}
+
+.preloader {
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.preloader-img {
+  background-image: url(../images/loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+}
+
+#scroll-top-area {
+  background: #2da1c8;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 40px;
+  z-index: 8;
+  display: none;
+  transition: all 6s;
+}
+
+#scroll-top-area i {
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 25px;
+}
+.title-underline {
+  width: 15px;
+  height: 6px;
+  background: #000;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.title-underline::before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+
+.title-underline::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 15px;
+  top: 2px;
+}
+
+.count-break{
+  margin-right: 0px;
+}

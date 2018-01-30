@@ -1,0 +1,569 @@
+/*------------------------------------
+*Author:FortunaTheme
+*Template:Eris
+*Version:1.1
+*-------------------------------------
+*/
+
+/*--------Table of Content----------
+* 1.body background
+* 2.Logo area
+* 3.Coming soon area
+* 4.Right Bar
+* 5.Portfolio section
+* 6.Contact section
+* 7.Notify Bar
+*----------------------------------
+*/
+
+/*---------------body background-------------------*/
+.body-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+.image-bg {
+  background: url(../images/background/bg-1.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+#particles-js {
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  z-index: 4;
+}
+.image-bg .body-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.particle-default-bg {
+  background: url(../images/background/bg-4.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+.particle-snow-bg {
+  background: url(../images/background/bg-2.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+.particle-bubble-bg {
+  background: url(../images/background/bg-6.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+.particle-square-bg {
+  background: url(../images/background/bg-5.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+.ripple-bg {
+  background: url(../images/background/bg-3.jpg);
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.particle .body-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+#surface-shader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+#gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  z-index: 10;
+}
+
+#gradient2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  z-index: 3;
+  background-image: -webkit-radial-gradient(
+      80% 10%,
+      circle,
+      rgb(5, 1, 63),
+      transparent
+    ),
+    -webkit-radial-gradient(80% 50%, circle, rgb(58, 164, 178), transparent),
+    -webkit-radial-gradient(20% 80%, 40em 40em, rgb(14, 4, 56), transparent),
+    -webkit-radial-gradient(10% 10%, circle, rgb(68, 242, 215), transparent);
+}
+.gradient-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.3);
+}
+/*---------------Logo area-------------------*/
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+/*---------------Coming soon area-------------------*/
+.coming-area {
+  padding-top: 50px;
+  text-align: center;
+}
+.coming-area h1 {
+  font-size: 30px;
+}
+
+.coming-area #typed {
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 22px;
+  padding-top: 10px;
+  font-size: 48px;
+}
+.coming-area .typed-cursor {
+  color: #fff;
+  font-size: 48px;
+  padding-left: 10px;
+}
+
+.coming-area .type-wrap {
+  margin: 18px 0px;
+}
+
+.coming-area h3 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 18px;
+}
+.count-num,
+.count-date {
+  display: inline-block;
+}
+.count-num {
+  font-family: "Open Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 30px;
+}
+.count-date {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  vertical-align: bottom;
+  margin-left: 6px;
+  margin-bottom: -14px;
+}
+.count1,
+.count2,
+.count3 {
+  margin-right: 5px;
+}
+.date-line {
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+  margin-right: 28px;
+  border-radius: 4px;
+}
+.coming-area p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 14px;
+  margin-top: 42px;
+}
+.coming-area .info-btn {
+  background: rgba(255, 255, 255, 0.1);
+  width: 120px;
+  padding: 8px 0px;
+  margin: 20px 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  font-weight: 600;
+}
+.coming-area .info-btn:hover,
+.coming-area .info-btn:focus {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.coming-area .notify-btn {
+  width: 120px;
+  padding: 10px 0px;
+  margin: 20px 10px;
+  color: #000;
+  border: 0px;
+  display: inline-block;
+  background: #fff;
+  font-weight: 600;
+}
+.coming-area .notify-btn:hover,
+.coming-area .notify-btn:focus {
+  background: #dadada;
+}
+
+.social-icons {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.social-icons a i {
+  color: #fff;
+  text-align: center;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  line-height: 20px;
+  margin: 0px 6px;
+  transition: background 0.6s ease-in;
+}
+.social-icons a:hover,
+.social-icons a:focus {
+  background: #fff;
+  border-color: transparent;
+}
+.social-icons a:hover i,
+.social-icons a:focus i {
+  color: #000;
+}
+/*-------------------Right Bar-------------------*/
+#right-info-bar {
+  width: 50% !important;
+  left: 50% !important;
+  background: #fff !important;
+  padding: 0px 20px;
+}
+#right-info-bar .modal-content {
+  border: none;
+  position: initial;
+}
+#right-info-bar .close-animatedModal {
+  padding: 14px;
+  position: relative;
+  cursor: pointer;
+}
+#right-info-bar .close-animatedModal i {
+  position: absolute;
+  right: 28px;
+  font-size: 24px !important;
+}
+/*---------------Portfolio section-----------------*/
+
+.portfolio-content-head ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-weight: 700;
+  color: #000;
+}
+.portfolio-content-head ul li:hover {
+  color: #83878a;
+}
+#portfolio .mixitup-control-active {
+  background: #fff;
+  box-shadow: 0px 0px 10px #7e7e7e;
+}
+#portfolio .mix {
+  display: inline-block;
+}
+
+#portfolio .portfolio-item {
+  position: relative;
+  margin: 20px 0;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio .portfolio-img {
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  transform: scale(1);
+  transition: all 0.5s;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-content-head {
+  margin-bottom: 28px;
+}
+
+.portfolio-item:hover .portfolio-img img {
+  transform: rotate(20deg) scale(1.4);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  background: rgba(242, 242, 242, 0.9);
+  width: 100%;
+  height: 79%;
+  text-align: center;
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.portfolio-overlay .category {
+  margin-top: 22px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.portfolio-overlay .magnify-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.25s;
+}
+
+.portfolio-overlay .magnify-icon:hover,
+.portfolio-overlay .magnify-icon:focus {
+  background: #959090;
+}
+
+.portfolio-overlay .magnify-icon p span i {
+  font-size: 15px;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+}
+/*------------------Contact section-------------*/
+
+.contact-item {
+  padding: 80px 0;
+}
+
+.contact-header {
+  padding-bottom: 28px;
+}
+
+.contact .location {
+  margin: 0 auto;
+}
+
+.location h6 {
+  color: #164e71;
+  padding-bottom: 28px;
+}
+
+.location p span i {
+  color: #e7e7e7;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  font-size: 22px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  display: block;
+  width: 100%;
+  padding-left: 14px;
+  border: 1px solid #d8d8d8;
+}
+
+.contact-icon {
+  text-align: center;
+  color: #000;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 56px;
+  margin-top: 28px;
+}
+
+.contact-form form textarea {
+  height: 160px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.contact-form form #form-name,
+.contact-form form #form-email {
+  height: 50px;
+  display: inline;
+  width: 49%;
+}
+.contact-form #form-email {
+  float: right;
+}
+.contact .submit-btn {
+  border: 0;
+  width: 125px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: #000;
+  padding: 10px;
+  float: left;
+}
+.contact .submit-btn:hover,
+.contact .submit-btn:focus {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.contact .result {
+  width: 100%;
+  display: block;
+}
+
+.result .error {
+  color: #f00;
+  padding-top: 24px;
+}
+
+.result .success {
+  color: #000;
+  padding-top: 24px;
+}
+/*--------------------Notify Bar------------------------*/
+#notify-bar {
+  background: transparent !important;
+}
+.notify-body {
+  width: 100%;
+  position: relative;
+}
+.notify-content {
+  width: 40%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 8px;
+  margin-top: 60px;
+}
+#notify-bar .modal-content {
+  border: 0px;
+  width: 100%;
+}
+#notify-bar .modal-content h6,
+#notify-bar .modal-content p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#notify-bar #mc-email {
+  width: 79%;
+  display: block;
+  height: 45px;
+  padding-left: 10px;
+  border: 1px solid #d8d8d8;
+  margin: 0 auto;
+}
+#notify-bar label {
+  width: 79%;
+  margin: 0 auto;
+  display: block;
+  padding: 18px 0px;
+  text-align: center;
+}
+#notify-bar .error {
+  color: #f00;
+}
+#notify-bar .valid {
+  color: #000;
+}
+#notify-bar form {
+  margin: 10px 0px;
+}
+#notify-submit {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+  margin-top: 0px !important;
+  outline: 0px;
+}
+#notify-submit:hover,
+#notify-submit:focus {
+  background: #fff !important;
+  color: #000;
+  border: 1px solid #000;
+}
+.notify-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+#notify-bar .modal-content {
+  border: none;
+  position: initial;
+}
+#notify-bar .close-animatedModal {
+  padding: 14px;
+  position: relative;
+  cursor: pointer;
+}
+#notify-bar .close-animatedModal i {
+  position: absolute;
+  right: 28px;
+  font-size: 24px !important;
+}
+
+
+.btn {
+    background: #fff  center;
+    border: medium none;
+    font-size: 15px;
+    height: 50px;
+    line-height: 40px;
+    width: 100%;
+    color: #000;
+    border-radius: 0px;
+}

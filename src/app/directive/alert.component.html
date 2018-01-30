@@ -1,0 +1,15 @@
+<div class="container col-xs-4" style="position: absolute; left: 33.5%; top: 35px;">
+    <div class="row">
+        <div style="align-content: center; top: 50px; position: relative; vertical-align: middle">
+            <div>
+            </div>
+            <div>
+                <div *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">
+                    <button type="button" class="close" (click)="dismissAlert()">
+                    <span aria-hidden="true" i18n>&times;</span></button>
+                    <strong>{{message.text}}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

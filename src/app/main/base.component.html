@@ -1,0 +1,79 @@
+<div style="text-align:center ; color:#fff; margin-top:20px; " class="row">
+                <div class="col-md-12">
+                    <a  href="" (click)="onlanguageClick('en')" [ngClass]="{'active': lan == 'en' }" i18n>English</a> |
+                    <a href="" (click)="onlanguageClick('ch')" [ngClass]="{'active': lan == 'ch' }" i18n>Chinese</a> |
+                    <a href="" (click)="onlanguageClick('hi')" [ngClass]="{'active': lan == 'hi' }" i18n>Hindi</a> |
+                    <a href="" (click)="onlanguageClick('es')" [ngClass]="{'active': lan == 'es' }" i18n>Spanish</a> |
+                    <a href="" (click)="onlanguageClick('ar')" [ngClass]="{'active': lan == 'ar' }" i18n>Arabic</a> |
+                    <a href="" (click)="onlanguageClick('ru')" [ngClass]="{'active': lan == 'ru' }" i18n>Russian</a> |
+                    <a href="" (click)="onlanguageClick('bn')" [ngClass]="{'active': lan == 'bn' }" i18n>Bengali</a> |
+                    <a href="" (click)="onlanguageClick('pt')" [ngClass]="{'active': lan == 'pt' }" i18n>Portugese</a> |
+                    <a href="" (click)="onlanguageClick('ja')" [ngClass]="{'active': lan == 'ja' }" i18n>Japanese</a> |
+                    <a href="" (click)="onlanguageClick('ko')" [ngClass]="{'active': lan == 'ko' }"i18n>Korean</a> 
+                </div>
+            </div>
+<!--Start body content area-->
+<div class="shader-content body-content">
+    <!--Start logo area-->
+    <div class="logo-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/" class="logo">
+                        <img src="./../../assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End logo area-->
+
+    <!--Start main area-->
+    <div id="main-area" class="coming-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="coming-area" id="coming-area">
+                        <div class="type-wrap">
+                            <div id="typed-strings">
+                                <p i18n>coming soon.</p>
+                                <p i18n>One-Click Masternodes</p>
+                                <p i18n>Masternode Pools</p>
+                            </div>
+                            <span id="typed" style="white-space:pre;"></span>
+                        </div>
+                        <!--<div data-countdown="2018/02/15" class="count"></div>-->
+                        <div class="count-num" [innerHtml]="message">
+
+                        </div>
+                        <p class="coming-area-detail" i18n>Nukleus makes Masternodes essy. Launch a Masternode with one click. Pool your coins with other users
+                            to launch a Masternode.</p>
+                        <form [formGroup]="subscribeForm" (ngSubmit)="subscribe(subscribeForm.value, subscribeForm.valid)" id="mc-form">
+                            <div class="coming-btn">
+
+                                <input style="height:43px;width:240px" type="text" class="subscribe" placeholder="Enter your email address" formControlName="email_id"
+                                    (focus)="isSubscribed = false">
+                                <button type="submit" class="notify-btn" [disabled]="isSubscribeDisabled" i18n>SUBSCRIBE</button>
+                                <br><span [hidden]="subscribeForm.controls.email_id.valid || !subscribeForm.controls.email_id.touched && !submitted"
+                                    class="text-danger" i18n>
+                            Please enter a valid email address
+                        </span>
+                               <br><span [hidden]="!isSubscribed" class="text-success" i18n>
+                            Successfully subscribed
+                         </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nukleusNODES/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/nukleusNODES" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://t.me/nukleusofficial" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                        <a href="https://github.com/nukleusNODES" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-steam" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End main area-->
+</div>
