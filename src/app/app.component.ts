@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
       .filter(route => route.outlet === 'primary')
       .mergeMap(route => route.data)
       .subscribe((event) => {
-        this.titleService.setTitle(event['title']);
+        //this.titleService.setTitle(event['title']);
         const aa = Array.prototype.slice.call(document.getElementsByTagName("meta"));
         // aa.forEach(element => {
         //   this.meta.removeTagElement(element);

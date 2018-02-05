@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule,Title, Meta } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlertComponent } from './directive/alert.component';
@@ -70,7 +70,7 @@ type StoreType = {
   providers: [ // expose our Services and Providers into Angular's dependency injection AIzaSyBbORAn9XjaA0W-3pIEAnD4jzn9A7CoGO8 
     ENV_PROVIDERS,
     APP_PROVIDERS,
-    ActivateGuard, Constants, AlertService
+    ActivateGuard, Constants, AlertService, Title, Meta
   ]
 })
 export class AppModule {

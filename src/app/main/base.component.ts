@@ -1,6 +1,7 @@
 // import { Component } from '@angular/core';
 import { Component, OnInit, Input, ElementRef } from '@angular/core';
 import { Validators, FormGroup, FormArray, FormBuilder, FormControl } from '@angular/forms';
+import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import * as Typed from 'typed.js';
 import { CountDown } from "ng2-date-countdown";
@@ -29,11 +30,12 @@ export class BaseComponent implements OnInit {
   private message: string;
   private id=0;
   private lan='en'
-  constructor(private fb: FormBuilder, private elementRef: ElementRef, private alertService: AlertService) {
+  constructor(private fb: FormBuilder, private elementRef: ElementRef, private alertService: AlertService, private titleService: Title, private metaService: Meta) {
     window.scrollTo(0, 0);
     if(localStorage.getItem("language")!=null &&  localStorage.getItem("language")!=undefined && localStorage.getItem("language")!=''){
       this.lan=localStorage.getItem("language");
     }
+    this.setTitleAndMetaTags()
     firebase.auth().signInAnonymously().then(resp => {
       var refObject = firebase.database().ref().child('subscribers');
       refObject.on('value', snap => {
@@ -63,10 +65,10 @@ export class BaseComponent implements OnInit {
     seconds = t % 60;
 
     return [
-      days + '<span class="count-date count1">days - </span>',
-      hours + '<span class="count-date count2">hrs - </span>',
-      minutes + '<span class="count-date count3">min - </span>',
-      seconds + '<span class="count-date">sec </span>'
+      days + '<span class="count-date count1" i18n>days - </span>',
+      hours + '<span class="count-date count2" i18n>hrs - </span>',
+      minutes + '<span class="count-date count3" i18n>min - </span>',
+      seconds + '<span class="count-date" i18n>sec </span>'
     ].join(' ');
   }
 
@@ -127,6 +129,62 @@ export class BaseComponent implements OnInit {
   onlanguageClick(language :string){
     localStorage.setItem("language",language);
     window.location.reload;
+  }
+
+setTitleAndMetaTags(){
+    let pageTitle = "One-Click Masternodes | Masternode Pools - Nukleus";
+    let pageDescription="Launch a masternode with one-click. Join a masternode pool and start earning no matter how many coins you have."
+    let language=localStorage.getItem("language");
+    switch (language) {
+    case "ar":
+      pageTitle = "ماسترنود بنقرة واحدة | مجموعات الماسترنود -  Nukleus";
+      pageDescription="اطلق ماسترنود بنقرة واحدة. اشترك فى مجموعة ماسترنود وابدأ بالربح بغض النظر عن عدد العملات التى تمتلكها"
+      break;
+    case "bn":
+      pageTitle = "এক ক্লিক ক্লিক করুন | ঠিকানাs";
+      pageDescription="এক-ক্লিক সঙ্গে একটি মাস্টার নোড আরম্ভ করুন একটি মাস্টার নোড পুলের সাথে যোগ দিন এবং আপনার কতগুলি কয়েন আছে তার কোনও অর্থ উপার্জন শুরু করুন।"
+      break;
+    case "ch":
+      pageTitle = "一键购Masternodes | Masternode彩池 -  Nukleus";
+      pageDescription="一键式启动masternode。不管您有多少密码货币，加入masternode彩池并开始赚钱。"
+      break;
+    case "en":
+      pageTitle = "One-Click Masternodes | Masternode Pools - Nukleus";
+      pageDescription="Launch a masternode with one-click. Join a masternode pool and start earning no matter how many coins you have."
+      break;
+    case "es":
+      pageTitle = "Nodo Maestro a Un-Clic | Comunidad de Nodos Maestros - Nukleus";
+      pageDescription="Inicia un nodo maestro con solamente un clic. Ingresa al grupo de nodos maestros y comienza a ganar sin importar cuántas monedas tengas."
+      break;
+    case "hi":
+      pageTitle = "वन क्लिक मास्टरनोड्स | मास्टरनोड्स समूह - नुक्लेउस";
+      pageDescription="एक क्लिक के साथ मास्टरनोड्स को शुरू करे | कोई अंतर नहीं पड़ता की आपके पास कितनी मुद्रा है ,मास्टरनोड्स समूह से जुड़े और कमाना शुरू करे|"
+      break;
+    case "ja":
+      pageTitle = "ワンクリック マスターノード | マスターノードプール ‐ ニュークレウス";
+      pageDescription="ワンクリックでマスターノードを作動させる。コインの数に関係なくマスターノードプールに参加して報酬を得る。"
+      break;
+    case "ko":
+      pageTitle = "원 클맄 마스터노드  | 마스터노드풀 - 누클레우스";
+      pageDescription="원 클맄으로 마스터노드를 시작한다. 마스터노드 풀에 가입하고 가지고있는 동전의 수에 관계없이 돈을 벌기 시작한다."
+      break;
+    case "pt":
+      pageTitle = "Masternodes Em Um Clique | Masternode Pools - Nukleus";
+      pageDescription="Crie um masternode em apenas um clique. Junte-se ao masternode pool e comece a ganhar, não importa quantas moedas você tenha."
+      break;
+    case "ru":
+      pageTitle = "Однокликабельные Мастерноды. Пулы главных узлов";
+      pageDescription="Стартуй Мастерноды одним кликом. Присоединяйся к пулам главных узлов и начни зарабатывать - не имеет значение сколько у тебя коинов."
+      break;
+    default:
+      pageTitle = "One-Click Masternodes | Masternode Pools - Nukleus";
+      pageDescription="Launch a masternode with one-click. Join a masternode pool and start earning no matter how many coins you have."
+  }
+    
+    this.titleService.setTitle(pageTitle);
+    const discription:MetaDefinition = { name : "description", id : "description", content:pageDescription}
+    this.metaService.updateTag(discription);
+  
   }
 
 }

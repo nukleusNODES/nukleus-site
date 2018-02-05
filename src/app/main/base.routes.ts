@@ -7,10 +7,10 @@ export const ROUTES: Routes = [
     path: 'index',
     component: BaseComponent,
     data: {
-      title: 'Masternode Platform | Masternode pools - Nukleus',
-      meta: [
-      { 'name': 'description', 'id':'description', 'content': '' },
-      { 'name': 'keywords', 'id':'keywords', 'content': '' }]
+      // title: 'Masternode Platform | Masternode pools - Nukleus',
+      // meta: [
+      // { 'name': 'description', 'id':'description', 'content': '' },
+      // { 'name': 'keywords', 'id':'keywords', 'content': '' }]
     }
   }
 ];
