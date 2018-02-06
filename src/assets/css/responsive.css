@@ -89,7 +89,7 @@
     text-align: center;
   }
   .count-num {
-    font-size: 36px;
+    font-size: 20px;
     margin-top: 20px;
     font-weight: 600;
   }
@@ -104,8 +104,8 @@
   }
 
   .coming-area p {
-    margin-bottom: 6px;
-    margin-top: 28px;
+    margin-bottom: 16px;
+    margin-top: 0px;
   }
 }
 
@@ -118,12 +118,12 @@
 
 @media only screen and (max-width: 320px) {
   .count-num {
-    font-size: 36px;
+    font-size: 15px;
     margin-top: 14px;
   }
   .coming-area p {
-    margin-bottom: 8px;
-    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-top: 0px;
   }
   .coming-area-detail {
     font-size: 12px;

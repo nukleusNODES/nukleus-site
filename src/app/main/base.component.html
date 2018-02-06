@@ -45,17 +45,10 @@
                             <span id="typed" style="white-space:pre;"></span>
                         </div>
                         <!--<div data-countdown="2018/02/15" class="count"></div>-->
-                        <div class="count-num" [innerHtml]="message">
-
-
-                        </div>
-                        <p class="coming-area-detail" i18n>Running a masternode can be very profitable but is highly technical and expensive to set up. Nukleus makes running masternodes simple and inexpensive.</p>
-                        <p class="coming-area-detail" i18n>One-click masternode set-up allows users to launch in just minutes. Masternode pools allow users to combine their coins and own a percentage of a masternode, which is often too expensive for one person to do.</p>
-                        <p class="coming-area-detail" i18n>We have a great team and are committed to delivering excellent products.</p>
-                        <p class="coming-area-detail" i18n>Advance token sale going on now - contact us at <a style="color:#1abc9c" href="mailto:info@nukl.eus">info@nukl.eus</a></p>
+                        <div class="count-num" [innerHtml]="message">  </div>
                         <form [formGroup]="subscribeForm" (ngSubmit)="subscribe(subscribeForm.value, subscribeForm.valid)" id="mc-form">
                             <div class="coming-btn">
-                                <span style="color:#fff" i18n>Register below to get an alert before we launch.</span><br>
+                                <br><span style="color:#fff" i18n>Register below to get an alert before we launch.</span><br>
                                 <input style="height:43px;width:240px" type="text" class="subscribe" placeholder="Enter your email address" formControlName="email_id"
                                     (focus)="isSubscribed = false">
                                 <button type="submit" class="notify-btn" [disabled]="isSubscribeDisabled" i18n>SUBSCRIBE</button>
@@ -68,6 +61,11 @@
                          </span>
                             </div>
                         </form>
+                        <p class="coming-area-detail" i18n>Running a masternode can be very profitable but is highly technical and expensive to set up. Nukleus makes running masternodes simple and inexpensive.</p>
+                        <p class="coming-area-detail" i18n>One-click masternode set-up allows users to launch in just minutes. Masternode pools allow users to combine their coins and own a percentage of a masternode, which is often too expensive for one person to do.</p>
+                        <!--<p class="coming-area-detail" i18n>We have a great team and are committed to delivering excellent products.</p>-->
+                        <p class="coming-area-detail" i18n>Advance token sale going on now - contact us at <a style="color:#1abc9c" href="mailto:info@nukl.eus">info@nukl.eus</a></p>
+                        
                     </div>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/nukleusNODES/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>

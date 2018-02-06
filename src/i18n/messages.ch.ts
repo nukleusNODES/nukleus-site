@@ -80,7 +80,7 @@ export const TRANSLATION_CH =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="09e9077243ccbd02ef272ee94ad7a1632e46c519" datatype="html">
         <source>Advance token sale going on now - contact us at <x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/></source>
-        <target>预先货币促销正进行中 - 请通过info@nukl.eus与我们联系。</target>
+        <target>预先货币促销正进行中 - 请通过<x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/>与我们联系。</target>
       </trans-unit>
       <trans-unit id="594378560fdaa7774aa229818c6e11b81ed7b2a0" datatype="html">
         <source>Register below to get an alert before we launch.</source>
