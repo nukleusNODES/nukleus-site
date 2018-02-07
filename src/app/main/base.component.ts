@@ -1,8 +1,8 @@
 // import { Component } from '@angular/core';
-import { Component, OnInit, Input, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ElementRef,AfterViewInit } from '@angular/core';
 import { Validators, FormGroup, FormArray, FormBuilder, FormControl } from '@angular/forms';
 import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+import { Router , Params, ActivatedRoute } from '@angular/router';
 import * as Typed from 'typed.js';
 import { CountDown } from "ng2-date-countdown";
 import { AlertService } from './../shared/alert.service';
@@ -22,19 +22,28 @@ export class BaseComponent implements OnInit {
   public submitted: boolean;
   subscribeForm: FormGroup;
   public isSubscribed: boolean = false;
-  private future: Date;
-  private futureString: string;
-  private diff: number;
-  private $counter: Observable<number>;
-  private subscription: Subscription;
-  private message: string;
-  private id=0;
-  private lan='en'
-  constructor(private fb: FormBuilder, private elementRef: ElementRef, private alertService: AlertService, private titleService: Title, private metaService: Meta) {
+  public future: Date;
+  public futureString: string;
+  public diff: number;
+  public $counter: Observable<number>;
+  public subscription: Subscription;
+  public message: string;
+  public id=0;
+  public lan:any
+  constructor(private router: Router, private route: ActivatedRoute, private fb: FormBuilder, private elementRef: ElementRef, private alertService: AlertService, private titleService: Title, private metaService: Meta) {
     window.scrollTo(0, 0);
-    if(localStorage.getItem("language")!=null &&  localStorage.getItem("language")!=undefined && localStorage.getItem("language")!=''){
-      this.lan=localStorage.getItem("language");
-    }
+   
+    this.lan=localStorage.getItem("language");   
+    this.route.queryParams.forEach((params: Params) => {
+      if (params['lang'] != null && params['lang'] != undefined && params['lang'] != '') {
+          if(localStorage.getItem("language") != params['lang'] && localStorage.getItem("isLanguagePresent") != 'no'){
+          localStorage.setItem("language",params['lang']);
+          this.lan=params['lang'];
+           window.location.reload() 
+        }
+      }
+    });
+   
     this.setTitleAndMetaTags()
     firebase.auth().signInAnonymously().then(resp => {
       var refObject = firebase.database().ref().child('subscribers');
@@ -44,15 +53,20 @@ export class BaseComponent implements OnInit {
         } else {
           this.id = snap.val()[snap.val().length-1].id
         }
-      });
-      
+      }); 
     });
 
     const emailRegex = `^[a-zA-Z0-9!#$%&'*+=?^_{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+=?^_{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$`;
     this.subscribeForm = this.fb.group({
       'email_id': [null, Validators.compose([Validators.required, Validators.pattern(emailRegex)])]
     });
+    this.lan= localStorage.getItem("language")
+    this.router.navigate(['/'],{ queryParams: { lang: localStorage.getItem("language") } });  
   }
+
+   ngAfterViewInit(){
+     
+   }
 
   dhms(t) {
     var days, hours, minutes, seconds;
@@ -73,6 +87,7 @@ export class BaseComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     var typed = new Typed("#typed", {
       stringsElement: '#typed-strings',
       typeSpeed: 60,
@@ -128,7 +143,7 @@ export class BaseComponent implements OnInit {
 
   onlanguageClick(language :string){
     localStorage.setItem("language",language);
-    window.location.reload;
+    window.location.reload();
   }
 
 setTitleAndMetaTags(){

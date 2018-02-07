@@ -2,6 +2,7 @@
  * Angular bootstraping
  */
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { Router , Params, ActivatedRoute } from '@angular/router';
 import { decorateModuleRef } from './app/environment';
 import { bootloader } from '@angularclass/hmr';
 import { enableProdMode, TRANSLATIONS, TRANSLATIONS_FORMAT, LOCALE_ID } from '@angular/core';
@@ -34,6 +35,7 @@ import { AppModule } from './app';
 //     {provide:LOCALE_ID, useValue:'en'}
 //   ]}
 export function main(): Promise<any> {
+  let route: ActivatedRoute
   let TRANSLATION = TRANSLATION_EN;
   let language = "en"
   if (localStorage.getItem('language') == null) {
@@ -42,39 +44,58 @@ export function main(): Promise<any> {
   } else {
     language = localStorage.getItem('language');
   }
+  // this.route.queryParams.forEach((params: Params) => {
+  //     if (params['lang'] != null && params['lang'] != undefined && params['lang'] != '') {
+  //         localStorage.setItem("language",params['lang']);
+  //         alert(params['lang'])
+  //         window.location.reload;
+  //     }
+  //   });
   switch (language) {
     case "ar":
       TRANSLATION = TRANSLATION_AR;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "bn":
       TRANSLATION = TRANSLATION_BN;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "ch":
       TRANSLATION = TRANSLATION_CH;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "en":
       TRANSLATION = TRANSLATION_EN;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "es":
       TRANSLATION = TRANSLATION_ES;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "hi":
       TRANSLATION = TRANSLATION_HI;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "ja":
       TRANSLATION = TRANSLATION_JA;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "ko":
       TRANSLATION = TRANSLATION_KO;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "pt":
       TRANSLATION = TRANSLATION_PT;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     case "ru":
       TRANSLATION = TRANSLATION_RU;
+      localStorage.setItem('isLanguagePresent', "yes");
       break;
     default:
       TRANSLATION = TRANSLATION_EN;
+      localStorage.setItem('isLanguagePresent', "no");
+      localStorage.setItem('language', 'en')
   }
   //localStorage.removeItem("language")
   return platformBrowserDynamic()
