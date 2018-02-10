@@ -1,0 +1,10 @@
+/*#mailget_signup_form *{font:normal normal 400 16px/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#383838}
+#mailget_signup_form{max-width:400px; width:100%;}
+#mailget_signup_form .mg-row{padding:6px}
+#mailget_signup_form label{display:block;margin-bottom:3px}
+#mailget_signup_form button,#mailget_signup_form input,#mailget_signup_form textarea{display:block;padding:4px;border:1px solid #bbb;border-radius:2px;width:100%;-webkit-appearance:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#mailget_signup_form button:focus,#mailget_signup_form input:focus,#mailget_signup_form textarea:focus{border-color:#23b7e5;outline:0}
+#mailget_signup_form input[type=submit]{background-color:#1bc7f2;color:#fff;border-color:#00A5CF;cursor:pointer;font-weight:700;padding:5px;margin-top:12px}
+#mailget_signup_form input[type=submit]:hover{background-color:#23b7e5}
+#mailget_signup_form input[type=submit]:active{background-color:#1bc7f2}
+#mailget_signup_form .mg-error{margin-left:8px;font-size:14px;color:#F79572;line-height:1}*/

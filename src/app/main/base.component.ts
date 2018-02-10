@@ -13,7 +13,7 @@ declare var $: any;
 @Component({
   selector: 'base-component',
   templateUrl: 'base.component.html',
-  styleUrls: [],
+  styleUrls: ['./mailget.style.css'],
   providers: []
 })
 //added after worked component <offer-component></offer-component>

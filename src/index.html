@@ -56,6 +56,28 @@
 
         ga('create', 'UA-113476619-1', 'auto');
         ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+        function v_mailget() {
+            var x = document.forms["mailget_form"]["subs_email"].value;
+            var atpos = x.indexOf("@"); var dotpos = x.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+                document.getElementById("mailget_show_message").innerHTML = "Please enter the valid email";
+                document.forms["mailget_form"]["subs_email"].focus();
+                return false;
+            }
+            else {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'subscribe',
+                    eventAction: 'subscribed',
+                    eventLabel: x
+                });
+                document.getElementById("mailget_show_message").innerHTML = "subscribed successfully"
+                return true;
+            }
+        }
 
     </script>
 </body>
