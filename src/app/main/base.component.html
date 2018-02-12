@@ -29,11 +29,11 @@
     <!--End logo area-->
 
     <!--Start main area-->
-    <div id="main-area" class="coming-bg">
+    <div id="main-area" class="coming-bg" ng-class="{'rtl': lan=='ar'}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="coming-area" id="coming-area">
+                    <div class="coming-area" id="coming-area" >
                         <div class="type-wrap">
                             <div id="typed-strings">
                                 <p i18n>coming soon.</p>
@@ -61,43 +61,23 @@
                          </span>
                             </div>
                         </form>-->
-                        <form [formGroup]="subscribeForm" accept-charset="UTF-8" action="//www.formget.com/mailget/signups/subscribe/Ijc3MjEzNCI_3D/immediate" id="mailget_signup_form"
+                        <form accept-charset="UTF-8" action="https://www.formget.com/mailget/signups/subscribe/Ijc3MjEzNCI_3D/immediate" id="mailget_signup_form"
                             name="mailget_form" method="post" onsubmit="return v_mailget()">
                             <br><span style="color:#fff" i18n>Register below to get an alert before we launch.</span><br>
                             <div>
                                 <input name="utf8" type="hidden" value="?" />
-                                <input name="subs_set_url" type="hidden" value="https://www.google.com" />
+                                <input name="subs_set_url" type="hidden" value="" />
                             </div>
                             
-                            <input style="height:43px;width:240px" id="signup_email" name="subs_email" type="email" class="subscribe" placeholder="Enter your email address" formControlName="email_id">
-                            <button type="submit" class="notify-btn" [disabled]="isSubscribeDisabled" id="submit_button"  i18n>SUBSCRIBE</button>
+                            <input style="height:43px;width:240px" id="signup_email" name="subs_email" type="email" class="subscribe" placeholder="Enter your email address">
+                            <button type="submit" class="notify-btn" [disabled]="isSubscribeDisabled" onclick="submitSubscribeForm()" id="submit_button"  i18n>SUBSCRIBE</button>
                             <br><span id="mailget_show_message" class="mg-error" class="text-danger" i18n></span>
                             
                         </form>
-                        <!--<form accept-charset="UTF-8" action="//www.formget.com/mailget/signups/subscribe/Ijc3MjEzNCI_3D/immediate" id="mailget_signup_form"
-                            name="mailget_form" method="post" onsubmit="return v_mailget()">
-                            <div>
-                                <input name="utf8" type="hidden" value="?" />
-                                <input name="subs_set_url" type="hidden" value="https://nukl.eus" />
-                            </div>
-                            <div class="mg-row">
-                                <label for="signup_name">Name</label>
-                                <input id="signup_name" name="subs_name" type="text" placeholder="Your Name" />
-                            </div>
-                            <div class="mg-row">
-                                <label for="signup_email">Email <span id="mailget_show_message" class="mg-error"></span></label>
-                                <input id="signup_email" name="subs_email" type="email" placeholder="email@example.com" />
-                            </div>
-                            <div class="mg-row">
-                                <input type="submit" class="submit" value="Subscribe" id="submit_button" />
-                            </div>
-                        </form>-->
+
                         <br>
-                        <p class="coming-area-detail" i18n>Running a masternode can be very profitable but is highly technical and expensive to set up. Nukleus
-                            makes running masternodes simple and inexpensive.</p>
-                        <p class="coming-area-detail" i18n>One-click masternode set-up allows users to launch in just minutes. Masternode pools allow users
-                            to combine their coins and own a percentage of a masternode, which is often too expensive for
-                            one person to do.</p>
+                        <p class="coming-area-detail" i18n>Running a masternode can be very profitable but is highly technical and expensive to set up. Nukleus makes running masternodes simple and inexpensive.</p>
+                        <p class="coming-area-detail" i18n>One-click masternode set-up allows users to launch in just minutes. Masternode pools allow users to combine their coins and own a percentage of a masternode, which is often too expensive for one person to do.</p>
                         <!--<p class="coming-area-detail" i18n>We have a great team and are committed to delivering excellent products.</p>-->
                         <p class="coming-area-detail" i18n>Advance token sale going on now - contact us at <a style="color:#1abc9c" href="mailto:info@nukl.eus">info@nukl.eus</a></p>
 
