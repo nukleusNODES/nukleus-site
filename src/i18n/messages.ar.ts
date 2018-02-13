@@ -52,7 +52,7 @@ export const TRANSLATION_AR =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="eb99c76688e79095ef648164ca5c407958abb5fb" datatype="html">
         <source>The Nukleus Platform</source>
-        <target>منصة Nukleus</target>
+        <target>Nukleus منصة</target>
       </trans-unit>
       <trans-unit id="df686fe4825e5758fb1e5e7063f7486bbf24ebd7" datatype="html">
         <source>One-Click Masternodes</source>
@@ -80,7 +80,7 @@ export const TRANSLATION_AR =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="09e9077243ccbd02ef272ee94ad7a1632e46c519" datatype="html">
         <source>Advance token sale going on now - contact us at <x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/></source>
-        <target>عملية بيع العملة مسبقا جارية الآن - تواصل معنا عن طريق البريد الإلكترونى  <x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/></target>
+        <target><x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/> عملية بيع العملة مسبقا جارية الآن - تواصل معنا عن طريق البريد الإلكترونى</target>
       </trans-unit>
       <trans-unit id="594378560fdaa7774aa229818c6e11b81ed7b2a0" datatype="html">
         <source>Register below to get an alert before we launch.</source>
