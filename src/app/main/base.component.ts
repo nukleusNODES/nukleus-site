@@ -27,6 +27,7 @@ export class BaseComponent implements OnInit {
   public diff: number;
   public $counter: Observable<number>;
   public subscription: Subscription;
+  public emailPlaceholder:string="Enter your email address";
   public message: string;
   public id=0;
   public lan:any
@@ -98,7 +99,7 @@ export class BaseComponent implements OnInit {
 
     });
 
-    this.future = new Date('february 15, 2018 12:00:00');
+    this.future = new Date('march 10, 2018 12:00:00');
     this.$counter = Observable.interval(1000).map((x) => {
       this.diff = Math.floor((this.future.getTime() - new Date().getTime()) / 1000);
       return x;
@@ -153,48 +154,59 @@ setTitleAndMetaTags(){
     switch (language) {
     case "ar":
       pageTitle = "ماسترنود بنقرة واحدة | مجموعات الماسترنود -  Nukleus";
-      pageDescription="اطلق ماسترنود بنقرة واحدة. اشترك فى مجموعة ماسترنود وابدأ بالربح بغض النظر عن عدد العملات التى تمتلكها"
+      pageDescription="اطلق ماسترنود بنقرة واحدة. اشترك فى مجموعة ماسترنود وابدأ بالربح بغض النظر عن عدد العملات التى تمتلكها";
+      this.emailPlaceholder="ادخل بريدك الإلكترونى";
       break;
     case "bn":
       pageTitle = "এক ক্লিক ক্লিক করুন | ঠিকানাs";
       pageDescription="এক-ক্লিক সঙ্গে একটি মাস্টার নোড আরম্ভ করুন একটি মাস্টার নোড পুলের সাথে যোগ দিন এবং আপনার কতগুলি কয়েন আছে তার কোনও অর্থ উপার্জন শুরু করুন।"
+      this.emailPlaceholder="তোমার ই - মেইল ​​ঠিকানা লেখো";
       break;
     case "ch":
       pageTitle = "一键购Masternodes | Masternode彩池 -  Nukleus";
-      pageDescription="一键式启动masternode。不管您有多少密码货币，加入masternode彩池并开始赚钱。"
+      pageDescription="一键式启动masternode。不管您有多少密码货币，加入masternode彩池并开始赚钱。";
+      this.emailPlaceholder="请输入您的电邮地址";
       break;
     case "en":
       pageTitle = "One-Click Masternodes | Masternode Pools - Nukleus";
       pageDescription="Launch a masternode with one-click. Join a masternode pool and start earning no matter how many coins you have."
+      this.emailPlaceholder="Enter your email address";
       break;
     case "es":
       pageTitle = "Nodo Maestro a Un-Clic | Comunidad de Nodos Maestros - Nukleus";
       pageDescription="Inicia un nodo maestro con solamente un clic. Ingresa al grupo de nodos maestros y comienza a ganar sin importar cuántas monedas tengas."
+      this.emailPlaceholder="Ingresa aquí tu correo electrónico";
       break;
     case "hi":
       pageTitle = "वन क्लिक मास्टरनोड्स | मास्टरनोड्स समूह - नुक्लेउस";
       pageDescription="एक क्लिक के साथ मास्टरनोड्स को शुरू करे | कोई अंतर नहीं पड़ता की आपके पास कितनी मुद्रा है ,मास्टरनोड्स समूह से जुड़े और कमाना शुरू करे|"
+      this.emailPlaceholder="अपना ईमेल एड्रेस  दर्ज करें";
       break;
     case "ja":
       pageTitle = "ワンクリック マスターノード | マスターノードプール ‐ ニュークレウス";
       pageDescription="ワンクリックでマスターノードを作動させる。コインの数に関係なくマスターノードプールに参加して報酬を得る。"
+      this.emailPlaceholder="メールアドレスを入力して下さい";
       break;
     case "ko":
       pageTitle = "원 클맄 마스터노드  | 마스터노드풀 - 누클레우스";
       pageDescription="원 클맄으로 마스터노드를 시작한다. 마스터노드 풀에 가입하고 가지고있는 동전의 수에 관계없이 돈을 벌기 시작한다."
+      this.emailPlaceholder="이메일을 입력하십시오";
       break;
     case "pt":
       pageTitle = "Masternodes Em Um Clique | Masternode Pools - Nukleus";
       pageDescription="Crie um masternode em apenas um clique. Junte-se ao masternode pool e comece a ganhar, não importa quantas moedas você tenha."
+      this.emailPlaceholder="Por favor, insira seu email";
       break;
     case "ru":
       pageTitle = "Однокликабельные Мастерноды. Пулы главных узлов";
       pageDescription="Стартуй Мастерноды одним кликом. Присоединяйся к пулам главных узлов и начни зарабатывать - не имеет значение сколько у тебя коинов."
+      this.emailPlaceholder="Напишите адрес электронной почты";
       break;
     default:
       pageTitle = "One-Click Masternodes | Masternode Pools - Nukleus";
       pageDescription="Launch a masternode with one-click. Join a masternode pool and start earning no matter how many coins you have."
-  }
+      this.emailPlaceholder="Enter your email address"
+ }
     
     this.titleService.setTitle(pageTitle);
     const discription:MetaDefinition = { name : "description", id : "description", content:pageDescription}

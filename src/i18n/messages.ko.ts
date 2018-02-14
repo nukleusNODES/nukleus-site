@@ -48,7 +48,7 @@ export const TRANSLATION_KO =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="6dd16bb759c457237efde5aa6251cfbd074d776f" datatype="html">
         <source>coming soon.</source>
-        <target>곤 온다</target>
+        <target>곧 온다</target>
       </trans-unit>
       <trans-unit id="eb99c76688e79095ef648164ca5c407958abb5fb" datatype="html">
         <source>The Nukleus Platform</source>
@@ -73,7 +73,7 @@ export const TRANSLATION_KO =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="bd513c9cfe7829ac14d28a1170d321acded1a683" datatype="html">
         <source>One-click masternode set-up allows users to launch in just minutes. Masternode pools allow users to combine their coins and own a percentage of a masternode, which is often too expensive for one person to do.</source>
-        <target>사용자들이 원 클맄 마스터노드 설정을 사영하면 몇 분만에시작할 수 있다.  마스터노드 풀은 동전의 결합을 허락하고 비싼 마스터노드의 비율을 소유하기는 가능한다.</target>
+        <target>사용자들이 원 클맄 마스터노드 설정을 사용하면 몇 분만에 시작할 수 있다.  마스터노드 풀은 동전의 결합을 허락하고 비싼 마스터노드의 비율을 소유하기는 가능한다.</target>
       </trans-unit>
       <trans-unit id="e7b225fc774be60247450ce6fa3e4794de2f3080" datatype="html">
         <source>We have a great team and are committed to delivering excellent products.</source>
