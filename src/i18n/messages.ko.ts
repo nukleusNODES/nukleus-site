@@ -77,7 +77,7 @@ export const TRANSLATION_KO =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="e7b225fc774be60247450ce6fa3e4794de2f3080" datatype="html">
         <source>We have a great team and are committed to delivering excellent products.</source>
-        <target>우리의 훌륭한 팀이 좋은 제품을 제공하기 위해 노력한다</target>
+        <target>백서를 보려면 여기를 클릭하십시오.</target>
       </trans-unit>
       <trans-unit id="09e9077243ccbd02ef272ee94ad7a1632e46c519" datatype="html">
         <source>Advance token sale going on now - contact us at <x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/></source>

@@ -76,7 +76,7 @@ export const TRANSLATION_AR =`<?xml version="1.0" encoding="UTF-8" ?>
       </trans-unit>
       <trans-unit id="e7b225fc774be60247450ce6fa3e4794de2f3080" datatype="html">
         <source>We have a great team and are committed to delivering excellent products.</source>
-        <target>لدينا فريق مميز وملتزمون بتقديم منتجات ممتازة.</target>
+        <target>اضغط هنا لعرض ورقة العمل</target>
       </trans-unit>
       <trans-unit id="09e9077243ccbd02ef272ee94ad7a1632e46c519" datatype="html">
         <source>Advance token sale going on now - contact us at <x id="START_LINK" ctype="x-a"/>info@nukl.eus<x id="CLOSE_LINK" ctype="x-a"/></source>

@@ -169,7 +169,7 @@
   font-size: 38px;
   font-weight: 700;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 12px;
 }
 .count-date {
   color: #fff;
@@ -197,8 +197,8 @@
   max-width: 600px;
   margin: 0 auto;
   color: #fff;
-  margin-bottom: 24px;
-  margin-top: -10px;
+  margin-bottom: 36px;
+  margin-top: -28px;
 }
 .coming-area .info-btn {
   background: rgba(255, 255, 255, 0.1);
@@ -235,6 +235,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+  margin-top: -14px;
 }
 
 .social-icons a i {
